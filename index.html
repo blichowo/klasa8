@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
   </head>
   <body>
+    <button style="position: absolute; top: 20px; right: 20px" id="solution" onClick="myFunction()">+</button>
     <br/>
     <a href="https://blichowo.github.io/algorytmy/" target="_blank">ALGORYTMY</a><br/>
     <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">Online Python compiler</a><br/>
@@ -20,5 +21,12 @@
     <img src="https://raw.githubusercontent.com/blichowo/klasa8/main/lotto.jpg"/><br/>
     <h5>"Elif" - Jeśli instrukcja warunkowa "if" ma więcej niż dwie opcje</h5>
     <img src="https://raw.githubusercontent.com/blichowo/klasa8/main/kalorie.png"/><br/>
+    <img src="https://raw.githubusercontent.com/blichowo/klasa8/main/bmi.jpg" style="display: none" id="picture1"/><br/>
+    <script>
+      function myFunction(){
+        picture = document.getElementById("picture1")
+        picture.style.display = "block"
+      }
+    </script>
   </body>
 </html>
