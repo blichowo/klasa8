@@ -50,41 +50,41 @@
     <br/>
     <h4>Drugi kod do drona w PyCharm:</h4>
     <p>from djitellopy import Tello</p>
- <p>import cv2, math, time</p>
+     <p>import cv2, math, time</p>
 
- <p>tello = Tello()</p>
- <p>tello.connect()</p>
+     <p>tello = Tello()</p>
+     <p>tello.connect()</p>
 
- <p>tello.streamon()</p>
- <p>frame_read = tello.get_frame_read()</p>
+     <p>tello.streamon()</p>
+     <p>frame_read = tello.get_frame_read()</p>
 
- <p>tello.takeoff()</p>
+     <p>tello.takeoff()</p>
 
- <p>while True:</p>
-     <p>img = frame_read.frame</p>
-     <p>cv2.imshow("drone", img)</p>
+     <p>while True:</p>
+       <p>img = frame_read.frame</p>
+       <p>cv2.imshow("drone", img)</p>
 
-     <p>key = cv2.waitKey(1) & 0xff</p>
-     <p>if key == 27: # ESC</p>
-         <p>break</p>
-     <p>elif key == ord('w'):</p>
-         <p>tello.move_forward(30)</p>
-     <p>elif key == ord('s'):</p>
-         <p>tello.move_back(30)</p>
-     <p>elif key == ord('a'):</p>
-         <p>tello.move_left(30)</p>
-     <p>elif key == ord('d'):</p>
-         <p>tello.move_right(30)</p>
-     <p>elif key == ord('e'):</p>
-         <p>tello.rotate_clockwise(30)</p>
-     <p>elif key == ord('q'):</p>
-         <p>tello.rotate_counter_clockwise(30)</p>
-     <p>elif key == ord('r'):</p>
-         <p>tello.move_up(30)</p>
-     <p>elif key == ord('f'):</p>
-         <p>tello.move_down(30)</p>
+      <p>key = cv2.waitKey(1) & 0xff</p>
+       <p>if key == 27: # ESC</p>
+           <p>break</p>
+       <p>elif key == ord('w'):</p>
+           <p>tello.move_forward(30)</p>
+       <p>elif key == ord('s'):</p>
+           <p>tello.move_back(30)</p>
+       <p>elif key == ord('a'):</p>
+           <p>tello.move_left(30)</p>
+       <p>elif key == ord('d'):</p>
+           <p>tello.move_right(30)</p>
+       <p>elif key == ord('e'):</p>
+           <p>tello.rotate_clockwise(30)</p>
+       <p>elif key == ord('q'):</p>
+           <p>tello.rotate_counter_clockwise(30)</p>
+       <p>elif key == ord('r'):</p>
+           <p>tello.move_up(30)</p>
+       <p>elif key == ord('f'):</p>
+           <p>tello.move_down(30)</p>
 
- <p>tello.land()</p>
+     <p>tello.land()</p>
     <script>
       function myFunction(){
         picture = document.getElementById("picture1")
